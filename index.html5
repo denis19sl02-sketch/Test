@@ -1,0 +1,22 @@
+<!-- file5.html -->
+<style>
+.subtitle{
+    position:absolute;
+    bottom:40px;
+    width:100%;
+    text-align:center;
+    color:#00bfff;
+    font-size:22px;
+    letter-spacing:6px;
+    text-shadow:0 0 15px #00bfff;
+    animation:flicker 1.5s infinite;
+}
+@keyframes flicker{
+    0%,100%{opacity:1;}
+    50%{opacity:0.4;}
+}
+</style>
+
+<div class="subtitle">
+ADVANCED SECURITY SYSTEM
+</div>
