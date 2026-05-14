@@ -1,44 +1,56 @@
-<!-- file1.html -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <title>Denisx 19</title>
+
 <style>
-    <iframe src="particles.html" style="border:none;position:fixed;width:100%;height:100%;top:0;left:0;"></iframe>
-
-<iframe src="scan.html" style="border:none;position:fixed;width:100%;height:100%;top:0;left:0;"></iframe>
-
-<iframe src="corners.html" style="border:none;position:fixed;width:100%;height:100%;top:0;left:0;"></iframe>
-
-<iframe src="subtitle.html" style="border:none;position:fixed;width:100%;height:100%;top:0;left:0;"></iframe>
 body{
     margin:0;
-    height:100vh;
+    overflow:hidden;
+    background:black;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:black;
-    overflow:hidden;
+    height:100vh;
     font-family:Arial;
 }
+
 h1{
     color:#00bfff;
-    font-size:90px;
+    font-size:100px;
     text-shadow:
     0 0 10px #00bfff,
     0 0 20px #00bfff,
     0 0 40px #00bfff,
     0 0 80px #00bfff;
-    animation: glow 2s infinite alternate;
+    z-index:2;
+    animation:pulse 2s infinite alternate;
 }
-@keyframes glow{
+
+iframe{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:none;
+    z-index:1;
+}
+
+@keyframes pulse{
     from{transform:scale(1);}
-    to{transform:scale(1.08);}
+    to{transform:scale(1.06);}
 }
 </style>
 </head>
+
 <body>
+
 <h1>Denisx 19</h1>
+
+<iframe src="colors.html"></iframe>
+
 </body>
 </html>
