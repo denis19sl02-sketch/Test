@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111;
+}
+
+.letter {
+    font-size: 150px;
+    font-weight: bold;
+    color: #ff0055;
+    animation: burn 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes burn {
+    from {
+        text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055, 0 0 30px #ff0055;
+        transform: scale(1);
+    }
+    to {
+        text-shadow: 0 0 20px #ffcc00, 0 0 40px #ff5500, 0 0 60px #ff0000;
+        transform: scale(1.1);
+    }
+}
